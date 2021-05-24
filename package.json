@@ -1,0 +1,22 @@
+{
+  "name": "g-tut-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "g-tut-1",
+  "author": "Arun Sharma",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
