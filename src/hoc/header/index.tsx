@@ -11,7 +11,7 @@ export default function Header(props: HeaderProps): ReactElement | null {
     <>
       <div
         className="px-8 bg-white shadow-lg fixed w-full"
-        style={{ minHeight: props.safeAreaPadding + "px" }}
+        style={{ minHeight: props.safeAreaPadding + "px", zIndex: 1000000 }}
       >
         <div className="flex py-4 relative">
           <div className="">
