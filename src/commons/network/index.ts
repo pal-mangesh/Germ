@@ -15,7 +15,7 @@ const getHeaders = () => {
 
 const hostname=  "http://localhost:1337";
 
-export default {
+const Network =  {
   get: async (url: string) => {
     const response = await Axios.get(hostname+url,getHeaders());
     return response;
@@ -25,3 +25,5 @@ export default {
     return response;
   },
 };
+
+export default Network;
