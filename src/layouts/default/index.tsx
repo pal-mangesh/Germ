@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../../hoc/header";
 import HelmetContainer from "../../hoc/helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import Footer from "../../hoc/footer";
+
+
 interface IDefaultLayoutProps {
   title: string;
   children?: any;
@@ -27,11 +30,11 @@ export default (props: IDefaultLayoutProps) => {
   return (
     <>
       <HelmetContainer>
-        <title>{title}</title>
+        <title>{title} {props.title}</title>
       </HelmetContainer>
       <Header safeAreaPadding={safeAreaPadding} mainMenu={mainMenu} />
       <div style={{ paddingTop: safeAreaPadding + "px" }}>{props.children}</div>
-      <div> I am a footer</div>
+      <Footer />
     </>
   );
 };

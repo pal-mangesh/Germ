@@ -43,6 +43,7 @@ export default function Features(props: FeaturesProps): ReactElement | null {
                 <div className="mt-2">
                   <h6>{f.description}</h6>
                 </div>
+                <div className="text-left text-pink-500 p-4 pl-0">Read more</div>
               </div>
             ))
           : ""}

@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 import HeroBottomBG from "../../images/hero-bottom-bg.svg";
 import ImgHeroBG from "../../images/hero-bg.png";
 import Button from "../../components/button";
+import {Link } from 'gatsby';
 export interface HeroProps {}
 
 export default function Hero(props: HeroProps): ReactElement | null {
@@ -49,10 +50,12 @@ export default function Hero(props: HeroProps): ReactElement | null {
           </div>
           <h6>
             Ihre Finanzen sind unser Anliegen. Wir bieten eine große Auswahl an
-             Finanzprodukten, die Ihren Anforderungen entsprechen!
+            Finanzprodukten, die Ihren Anforderungen entsprechen!
           </h6>
           <div className="my-8">
-            <Button title="Apply Now" />
+            <Link to="/apply">
+               <Button title="Apply Now" />
+              </Link>
           </div>
         </div>
       </div>
