@@ -16,10 +16,14 @@ export default function BlogSc1(props: BlogSc1Props): ReactElement | null {
   }, []);
 
   const fetchBlogs = async () => {
-    const { data } = await Network.get("/blogs");
+    try{
+      const { data } = await Network.get("/blogs");
     if (data && data.length) {
       setBlogs([...data]);
     }
+  }catch(e){
+    console.log("could not fetch blogs!");
+  }
   };
 
   return (
